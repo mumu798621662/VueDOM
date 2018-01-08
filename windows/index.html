@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="markdown.min.css">
+    <script src="vue.js"></script>
+    <script src="vue-router.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tween.js@16.3.4"></script>
+
+</head>
+<style>
+    .v-enter{
+        opacity: 0;
+    }
+    .v-enter-active{
+        transition: opacity 2s;
+    }
+    .v-enter-to{
+        opacity:1
+    }
+    .v-leave{
+        opacity:1
+    }
+    .v-leave-active{
+        transition: opacity 2s;
+    }
+    .v-leave-to{
+        opacity:0
+    }
+
+</style>
+<body>
+<div id="root">
+    <nav>
+        <h5>导航</h5>
+        <div style="text-align: center">
+        <router-link to="/" style="font-size: 16px;color: #fff">文档</router-link>
+        <router-link to="/quickly" style="font-size: 16px;color: #fff">快速入门</router-link>
+        </div>
+    </nav>
+    <transition mode="out-in">
+        <router-view></router-view>
+    </transition>
+</div>
+</body>
+</html>
+<script src="components.js"></script>
+<script src="router.js"></script>
+<script src="index.js"></script>
+

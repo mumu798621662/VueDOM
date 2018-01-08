@@ -1,0 +1,1 @@
+[{"id":"1","title":"Router 构造配置","pid":"0"},{"id":"2","title":"routes","pid":"1"},{"id":"3","title":"mode","pid":"1"},{"id":"4","title":"对组件注入","pid":"0"},{"id":"5","title":"注入的属性","pid":"4"},{"id":"6","title":"允许的额外配置","pid":"4"}]
